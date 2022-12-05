@@ -2001,3 +2001,12 @@ const movies = [
     score: 8
   }
 ];
+
+// module.exports = movies;
+
+function dramaMoviesScore(moviesArray) {
+  const dramaAvg = moviesArray.filter (e => e.genre.includes('Drama'))
+  return scoresAverage(dramaAvg)
+}
+console.log(dramaMoviesScore(movies))
+
